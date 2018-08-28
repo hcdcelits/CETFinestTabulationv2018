@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8D31FAE-77E9-4779-BB57-D77B5B263024}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FinestTabulation</RootNamespace>
+    <AssemblyName>FinestTabulation</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CountdownRes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CountdownRes.Designer.cs">
+      <DependentUpon>CountdownRes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbConn.cs" />
+    <Compile Include="EssayWriting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EssayWriting.Designer.cs">
+      <DependentUpon>EssayWriting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eventPick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eventPick.Designer.cs">
+      <DependentUpon>eventPick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="finestdbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finestdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finestdbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finestdbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finestdbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finestdbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finestdbDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finestdbDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finestdbDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finestdbDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finestTabulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="finestTabulation.Designer.cs">
+      <DependentUpon>finestTabulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JudgeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JudgeLogin.Designer.cs">
+      <DependentUpon>JudgeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CountdownRes.resx">
+      <DependentUpon>CountdownRes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EssayWriting.resx">
+      <DependentUpon>EssayWriting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventPick.resx">
+      <DependentUpon>eventPick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="finestTabulation.resx">
+      <DependentUpon>finestTabulation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JudgeLogin.resx">
+      <DependentUpon>JudgeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="finestdbDataSet.xsc">
+      <DependentUpon>finestdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="finestdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finestdbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finestdbDataSet.xss">
+      <DependentUpon>finestdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="finestdbDataSet1.xsc">
+      <DependentUpon>finestdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="finestdbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finestdbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finestdbDataSet1.xss">
+      <DependentUpon>finestdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="finestdbDataSet2.xsc">
+      <DependentUpon>finestdbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="finestdbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finestdbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finestdbDataSet2.xss">
+      <DependentUpon>finestdbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="finestdbDataSet4.xsc">
+      <DependentUpon>finestdbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="finestdbDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finestdbDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finestdbDataSet4.xss">
+      <DependentUpon>finestdbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="finestdb.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="finestdbDataSet3.xsc">
+      <DependentUpon>finestdbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="finestdbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finestdbDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finestdbDataSet3.xss">
+      <DependentUpon>finestdbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Claw_Marks.png" />
+    <None Include="Resources\Claw_Marks_flip.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\loyd.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
